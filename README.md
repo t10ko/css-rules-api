@@ -43,7 +43,7 @@ You can also control iteration flow.
 CSSRules.forEach( function ( rule, type, key_text ) {
     if( type == CSSRules.MEDIA_RULE ) {
     
-        //  This will ignore skip current rule.
+        //  This will ignore all media rules.
         this.continue();
         return;
     }
@@ -117,7 +117,7 @@ CSSRules.removeListener( 'test-id' );
 
 ### CSSRules.change( changer, handlers, types )
 
-Iterates throught all available active rules, trying to change them.
+Iterates throught all available active rules trying to change them.
 
 **changer** is the callstep handler, which changes given rules if there is a need.  
 **handlers** is an object which gives callstart(property *start*), callback(property *end*) and step(property *step*) handlers.
@@ -217,7 +217,7 @@ CSSRules.change( function ( rule, type, key_text ) {
 
 You can have only one rule changer at a time.
 
-### CSSRules.undoChanges( callback )
+### CSSRules.undo( callback )
 
 This will restore all applied changes, and cancelles current rule changer, so you can add a new one.  
 This also works asyncronousely and callback will be called after all changes are undone.

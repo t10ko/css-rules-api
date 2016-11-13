@@ -2319,7 +2319,7 @@
 			 * This discards all changes done, and stops the ones which are in a waiting state.
 			 * @return {void}
 			 */
-			main.undoChanges = function ( on_end ) {
+			main.undo = function ( on_end ) {
 				if( !self.has ) 
 					return false;
 
