@@ -19,7 +19,7 @@ Compiled files will be available in *dist/* folder.
 
 # API reference.
 
-This library iterates CSS rules asyncronousely to prevent lagging.  
+This library iterates throught CSS rules asyncronousely to prevent lagging.  
 It also detects rule changes, stylesheet adds, deletes and [disables](https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/disabled), media rule activations/deactivations.
 
 ### CSSRules.forEach( handlers, flags )
