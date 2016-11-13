@@ -316,8 +316,6 @@
 		IMPORT_RULE = Natives.translate( 'IMPORT_RULE', flags );
 	} ) ( { from: 'CSSRule', prefixType: 'const' } );
 
-	main.MEDIA_BREAKPOINT = 1;
-
 	//	Mapping rule type constants to it's flags.
 	type_to_flag[ KEYFRAMES_RULE ] = ( main.KEYFRAMES_RULE = 1 );
 	type_to_flag[ KEYFRAME_RULE ] = ( main.KEYFRAME_RULE = 2 );

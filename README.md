@@ -2,6 +2,21 @@
 
 This is a powerfull library which is about parsing and changing all CSS rules available in a webpage.
 
+This library has dependencies and you can install it using bower. I've attached *package.json* which includes all dev dependencies and a gulpfile which will compile this library with all it's dependencies.
+
+To install all bower dependencies go to the project folder and write.
+```sh
+bower install
+```
+
+To install all dev dependencies write.
+```sh
+npm install --only=dev
+```
+
+After all this you can run gulp and it will compile this library with all of it's dependencies.  
+Compiled files will be available in *dist/* folder.
+
 # API reference.
 
 This library iterates CSS rules asyncronousely to prevent lagging.  
