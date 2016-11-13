@@ -1,0 +1,33 @@
+{
+  "name": "stylesheets-api",
+  "description": "StyleSheet rules parsing and manipulation API.",
+  "main": "src/main.js",
+  "authors": [
+    "Tigran Atayan"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "JavaScript",
+    "StyleSheets",
+    "changes",
+    "detection",
+    "rules",
+    "CSS",
+    "manipulation",
+    "parse",
+    "parsing"
+  ],
+  "dependencies": {
+    "vendor-prefixes": ">=1.0.0", 
+    "call-cacher": ">=1.0.4", 
+    "hooking-api": ">=2.1.1"
+  },
+  "homepage": "https://github.com/t10ko/stylesheets-api",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
