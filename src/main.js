@@ -1174,7 +1174,7 @@
 
 			if( !HasOwn( handlers, name ) ) 
 				handlers[ name ] = [];
-			handlers[ name ].push( Natives.hookFunction( handler, { fake: false }, function ( original ) {
+			handlers[ name ].push( Natives.hook( handler, { fake: false }, function ( original ) {
 				var active = !self.isActive;
 				!active && ForeachRule.$.onEnd( function () { active = true; } );
 				return function ( added, rule, type ) {
@@ -1943,7 +1943,7 @@
 
 
 				//	Rewriting parentStyleSheet getter function here.
-				descriptor.get = Natives.hookFunction( descriptor.get, { save: true }, Hooker );
+				descriptor.get = Natives.hook( descriptor.get, { save: true }, Hooker );
 				Object.defineProperty( proto, method, descriptor );
 
 				Natives.hook( 'StyleSheet.prototype.parentStyleSheet > get', Hooker );
