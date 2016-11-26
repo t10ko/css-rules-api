@@ -20,7 +20,7 @@
   "dependencies": {
     "vendor-prefixes": ">=1.0.0", 
     "call-cacher": ">=1.0.4", 
-    "hooking-api": ">=2.2.0"
+    "hooking-api": ">=2.2.1"
   },
   "homepage": "https://github.com/t10ko/stylesheets-api",
   "ignore": [
